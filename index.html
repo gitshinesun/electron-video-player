@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel = 'stylesheet' href='player.css'/>
+    <script src ='player.js' ></script>
+    <title>MediaPlayer</title>
+  </head>
+  <body>
+    <section id='playerContainer' class='player paused'>
+          <video id='videoContainer' class='video' ></video>
+          <div id='controlContainer' class='controls'>
+              <button id='play' class='play'>>></button>
+              <button id='pause' class='hide pause'>||</button>
+              <button id='fileChooser' class='fileChooser'>
+                Browser...
+            </button>
+          </div>
+          <section id='dropArea' class='dropArea'>              
+              <input type='file'
+                      accept="*/*"
+                      id='chooseVideo'
+                      class='chooseVideo hide'
+              />
+          </section>
+          <button id='close' class='close'>X</button>
+          <section id='error' class='error hide hidden'>
+              <h1 id='errorMessage'></h1>
+          </section>
+      </section>
+  </body>
+</html>

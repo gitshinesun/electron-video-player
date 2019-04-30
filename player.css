@@ -1,0 +1,127 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    color:rgb(180,180,180);
+    -webkit-user-select: none;
+    font-family: ubuntu,helvetica,arial;
+}
+body *{
+    position:relative;
+    cursor:default;
+}
+
+input[type='text']{
+    cursor: text;
+}
+
+input{
+    border:none;
+}
+
+.player{
+    background:rgb(0,0,0);
+    height:100%;
+    width:100%;
+}
+
+.video{
+    width:100%;
+    height:100%;
+}
+
+button{
+    -webkit-app-region: no-drag;
+    transition: color 300ms;
+    outline:none;
+    cursor: pointer;
+    color:rgb(180,180,180);
+    border:none;
+    background:transparent;
+    margin:0;
+    padding:5px;
+    font-size:20px;
+    width:5%;
+    overflow: hidden;
+}
+
+button:hover{
+    color:rgb(255,255,255);
+}
+
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    opacity:0;
+    transition:opacity 600ms ease-in;
+    text-align: right;
+}
+
+.controls{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    opacity:0;
+    transition:opacity 600ms ease-in;
+    padding: 10px 0 5px;
+    box-shadow: 0 -9px 12px rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
+    -webkit-app-region: no-drag;
+}
+
+.player.paused .close,
+.close:hover,
+.player.paused .controls,
+.controls:hover{
+    opacity:1;
+}
+
+.hide{
+    display:none;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.fileChooser{
+    width:30%;
+    left:11%;
+    background: rgb(80,80,80);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.error{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(100,50,50,.7);
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    transition:opacity 300ms;
+}
+
+.error h1{
+    position:absolute;
+    top:calc(50% - 75px);
+    left:0;
+    height:150px;
+    width:100%;
+    line-height: 150px;
+    background:rgba(200,150,150,.9);
+    font-size:55px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-shadow: 0 0 3px rgb(0,0,0);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    cursor: pointer;
+}

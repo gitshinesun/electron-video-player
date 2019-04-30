@@ -1,0 +1,11 @@
+{
+	"name": "video-player",
+	"version": "1.0.0",
+	"main": "main.js",
+	"dependencies": {
+		"electron": "^5.0.0"
+	},
+	"devDependencies": {
+		"electron-prebuilt": "^1.4.13"
+	}
+}
